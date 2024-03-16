@@ -32,7 +32,6 @@ public class converter extends text2Hash
                 System.out.println(ANSI_GREEN + hex + ANSI_RESET);
             }
         }
-        // System.out.println(map.get("NOP"));
     }
 
 }
