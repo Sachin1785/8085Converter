@@ -271,7 +271,7 @@ public class hash2text
 
         // Convert the hashmap to a text file
         try {
-            FileWriter writer = new FileWriter("hexcodes.txt");
+            FileWriter writer = new FileWriter("8085Converter/hexcodes.txt");
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 writer.write(entry.getKey() + " = " + entry.getValue() + "\n");
             }

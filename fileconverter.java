@@ -13,12 +13,12 @@ public class fileconverter  extends text2Hash{
 
     public static void main(String[] args) throws IOException {
         // Path to the input file
-        String inputFilePath = "input.txt";
+        String inputFilePath = "8085Converter/input.txt"; 
         // Path to the output file
-        String outputFilePath = "output.txt";
+        String outputFilePath = "8085Converter/output.txt";
 
         // Read hex codes from file
-        Map<String, String> map = readHexCodesFromFile("hexcodes.txt");
+        Map<String, String> map = readHexCodesFromFile("8085Converter/hexcodes.txt");
 
         // Initialize BufferedReader to read from the input file
         try (BufferedReader br = new BufferedReader(new FileReader(inputFilePath))) {
