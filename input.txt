@@ -1,0 +1,10 @@
+LDA
+mov h,b
+LDA
+ADD H
+mov l,A
+mvi A
+adc a
+mov h,A
+SHLD
+hlt

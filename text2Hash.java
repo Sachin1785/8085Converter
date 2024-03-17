@@ -32,5 +32,3 @@ public static Map<String, String> readHexCodesFromFile(String filePath)
     return map;
     }
 }
-
-

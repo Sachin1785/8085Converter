@@ -33,5 +33,4 @@ public class converter extends text2Hash
             }
         }
     }
-
 }

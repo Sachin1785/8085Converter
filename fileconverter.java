@@ -27,6 +27,7 @@ public class fileconverter  extends text2Hash{
                 String line;
                 while ((line = br.readLine()) != null) {
                     line = line.toUpperCase();
+                    line=line.trim();
                     String hex = map.get(line);
                     if (line.equals("/EXIT")) {
                         break;
@@ -39,6 +40,12 @@ public class fileconverter  extends text2Hash{
                     }
                 }
             }
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+    System.out.println(ANSI_GREEN + "Conversion successful!" + ANSI_RESET);
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading input from file");
+            e.printStackTrace();
         }
     }
 }
